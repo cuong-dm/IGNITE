@@ -1,0 +1,13 @@
+name: ignite
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python>=3.7,<3.8
+- pip>=20.0
+- conda>=4.7
+- cudatoolkit # by default should be >11 depending on your system
+- cudnn # by default should be 8
+- rdkit
+- pip:
+    - -r ./requirements.txt
